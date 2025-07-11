@@ -26,7 +26,7 @@ owner: {
     ref: "User",
 },
 category: {
-    type: [String],
+    type: String,
 },
 }); 
 

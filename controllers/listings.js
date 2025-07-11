@@ -74,6 +74,7 @@ module.exports.filter = async (req, res, next) => {
 };
 
 
+
 module.exports.destroyListing = async (req,res)=>{
     let {id} = req.params;
     let deletedListing = await Listing.findByIdAndDelete(id);

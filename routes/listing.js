@@ -12,6 +12,7 @@ const upload = multer({storage});
 //new route  => it should always be above /:id route
 router.get("/new",isLoggedIn,listingController.renderNewForm);
 router.get("/filter/:id", wrapAsync(listingController.filter));
+router.get("/search", wrapAsync(listingController.search));//search route
 
 router.route("/")
 .get( wrapAsync(listingController.index))  //index route

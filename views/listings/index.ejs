@@ -165,5 +165,9 @@
               </div>
               </a>
               <% } %>
+
+              <% if (typeof searchQuery !== 'undefined' && searchQuery.trim() !== '') { %>
+  <h4 class="mt-3">Search results for "<%= searchQuery %>"</h4>
+<% } %>
     </div>
 
